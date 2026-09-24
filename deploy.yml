@@ -1,6 +1,7 @@
 ---
 - hosts: aws_ec2
   connection: ssh
+  become: true
   user: ec2-user
 
   tasks:

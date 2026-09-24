@@ -9,9 +9,9 @@ resource "aws_s3_bucket_versioning" "myvers" {
 }
 
 terraform {
- backend "s3" {
+  backend "s3" {
     bucket = "naveen.infra.create"
-    key = "prod/terraform.tfstate"
+    key    = "prod/terraform.tfstate"
     region = "us-east-2"
   }
 }
